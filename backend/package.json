@@ -1,0 +1,23 @@
+{
+  "name": "first-node-app",
+  "version": "1.0.0",
+  "description": "this is my first app hello world using express",
+  "main": "app.js",
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "keywords": [
+    "first",
+    "node",
+    "app",
+    "hello",
+    "world"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
