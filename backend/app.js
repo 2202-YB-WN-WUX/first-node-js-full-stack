@@ -6,7 +6,7 @@ app.use(cors())
 
 const data = [
     {
-        name: "carrot",
+        name: "cool carrot",
         colour: "orange"
     },
     {
@@ -15,6 +15,22 @@ const data = [
     },
     {
         name: "yam",
+        colour: "red"
+    }
+]
+
+
+const dinos = [
+    {
+        name: "triceretops",
+        colour: "orange"
+    },
+    {
+        name: "swagceratops",
+        colour: "green"
+    },
+    {
+        name: "billosaurus",
         colour: "red"
     }
 ]
@@ -29,9 +45,15 @@ app.get('/', (req, res) => {
     `)
 })
 
-// set up the route for the about page
+// set up the route for the vegetable page
+// req is short for request
+// res is short for response
 app.get('/vegetables', (req, res) => {
     res.send(data)
+})
+
+app.get('/dinos', (req, res) => {
+    res.send(dinos)
 })
 
 // Get the route for /contact and show an h1 saying wellcome to contact page
@@ -44,3 +66,13 @@ app.listen(port, () => {
     console.log(`Our app is running on port ${port}`)
 })
 
+// Activity:
+// Backend:
+
+// Create an array filled with objects.
+// Add in 3 dinosaurs, have an image url and a name.
+
+// Create a route which is "/dinosaurs". Send
+// the dinosaur data to that route as a response.
+
+// In the front endpointURL, show the dinos using an AJAX request.
